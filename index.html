@@ -1,0 +1,1204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>skillbridg Learning Academy | Best Corporate Training in Chennai | Leadership & Soft Skills</title>
+  <meta name="description" content="skillbridg Learning Academy - Chennai's premier corporate training provider. Expert leadership development, soft skills training, sales excellence & employability programs. 12+ years experience." />
+  <meta name="keywords" content="corporate training Chennai, leadership development Chennai, soft skills training, sales training Chennai, executive coaching, employee training, professional development, team building Chennai, skillbridg Learning Academy" />
+  <meta name="author" content="skillbridg Learning Academy" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://skillbridglearningacademy.com" />
+  <meta property="og:title" content="skillbridg Learning Academy | Corporate Training Chennai" />
+  <meta property="og:description" content="Transform your workforce with Chennai's leading corporate training academy. Leadership, communication, sales & employability programs." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "skillbridg Learning Academy",
+    "description": "Chennai's premier corporate training provider offering leadership development, soft skills training, and employability programs.",
+    "url": "https://skillbridg.com",
+    "address": { "@type": "PostalAddress", "addressLocality": "Chennai", "addressCountry": "India" },
+    "areaServed": "Chennai, India",
+    "serviceType": ["Corporate Training", "Leadership Development", "Soft Skills Training", "Sales Training"]
+  }
+  </script>
+  <style>
+    /* ===== RESET & BASE ===== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body {
+      font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      color: #1a1a2e;
+      line-height: 1.6;
+      overflow-x: hidden;
+      background: #fff;
+    }
+    a { text-decoration: none; color: inherit; }
+    ul { list-style: none; }
+    img { max-width: 100%; display: block; }
+    button, input, textarea { font-family: inherit; border: none; outline: none; }
+
+    /* ===== CSS VARIABLES ===== */
+    :root {
+      --yellow: #f5a623;
+      --yellow-hover: #e69816;
+      --dark-blue: #1a1a4e;
+      --maroon: #8b1538;
+      --gradient-hero: linear-gradient(135deg, #2d1b69 0%, #1a237e 30%, #4a148c 60%, #880e4f 100%);
+      --gradient-icon-1: linear-gradient(135deg, #1a237e, #4a148c);
+      --gradient-icon-2: linear-gradient(135deg, #4a148c, #880e4f);
+      --gradient-icon-3: linear-gradient(135deg, #880e4f, #b71c1c);
+      --gradient-icon-4: linear-gradient(135deg, #1a237e, #880e4f);
+      --light-bg: #f0f4f3;
+      --card-shadow: 0 2px 16px rgba(0,0,0,0.06);
+      --card-shadow-hover: 0 8px 32px rgba(0,0,0,0.12);
+      --footer-bg: #1e2a3a;
+      --max-width: 1200px;
+    }
+
+    /* ===== NAVBAR ===== */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 48px;
+      background: transparent;
+      transition: background 0.3s, box-shadow 0.3s;
+    }
+    .navbar.scrolled {
+      background: rgba(26, 26, 78, 0.95);
+      backdrop-filter: blur(12px);
+      box-shadow: 0 2px 20px rgba(0,0,0,0.2);
+    }
+    .nav-logo {
+      font-size: 1.3rem;
+      font-weight: 700;
+      font-style: italic;
+      color: #f5a623;
+      background: #1a237e;
+      padding: 8px 20px;
+      border-radius: 6px;
+      border: 2px solid #f5a623;
+      white-space: nowrap;
+    }
+    .nav-links { display: flex; gap: 32px; align-items: center; }
+    .nav-links a {
+      color: #fff;
+      font-weight: 500;
+      font-size: 0.95rem;
+      transition: color 0.2s;
+      position: relative;
+    }
+    .nav-links a:hover { color: #f5a623; }
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: #f5a623;
+      transition: width 0.3s;
+    }
+    .nav-links a:hover::after { width: 100%; }
+    .mobile-toggle { display: none; cursor: pointer; background: none; color: #fff; font-size: 1.5rem; }
+
+    /* ===== HERO ===== */
+    .hero {
+      background: var(--gradient-hero);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 120px 24px 60px;
+      position: relative;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 30% 50%, rgba(74, 20, 140, 0.4) 0%, transparent 60%),
+                  radial-gradient(ellipse at 70% 50%, rgba(136, 14, 79, 0.3) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255,255,255,0.12);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 100px;
+      padding: 10px 24px;
+      color: #fff;
+      font-size: 0.9rem;
+      font-weight: 500;
+      margin-bottom: 32px;
+      position: relative;
+      z-index: 1;
+      animation: fadeInDown 0.8s ease;
+    }
+    .hero-badge .sparkle { font-size: 1.1rem; }
+    .hero h1 {
+      font-size: clamp(2.5rem, 5vw, 4.5rem);
+      font-weight: 900;
+      color: #fff;
+      line-height: 1.15;
+      margin-bottom: 24px;
+      position: relative;
+      z-index: 1;
+      animation: fadeInUp 0.8s ease 0.2s both;
+    }
+    .hero h1 .highlight { color: #f5a623; font-style: italic; }
+    .hero-desc {
+      color: rgba(255,255,255,0.85);
+      font-size: clamp(1rem, 1.5vw, 1.15rem);
+      max-width: 680px;
+      margin: 0 auto 40px;
+      line-height: 1.7;
+      position: relative;
+      z-index: 1;
+      animation: fadeInUp 0.8s ease 0.4s both;
+    }
+    .hero-buttons {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      justify-content: center;
+      position: relative;
+      z-index: 1;
+      animation: fadeInUp 0.8s ease 0.6s both;
+    }
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #f5a623;
+      color: #1a1a2e;
+      font-weight: 600;
+      padding: 14px 32px;
+      border-radius: 50px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.2s;
+      border: none;
+    }
+    .btn-primary:hover { background: #e69816; transform: translateY(-2px); }
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: transparent;
+      color: #fff;
+      font-weight: 600;
+      padding: 14px 32px;
+      border-radius: 50px;
+      font-size: 1rem;
+      cursor: pointer;
+      border: 2px solid rgba(255,255,255,0.4);
+      transition: border-color 0.3s, transform 0.2s;
+    }
+    .btn-secondary:hover { border-color: #fff; transform: translateY(-2px); }
+
+    /* ===== STATS BAR ===== */
+    .stats-bar {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 48px 24px;
+      border-top: 1px solid rgba(255,255,255,0.15);
+      margin-top: 48px;
+      position: relative;
+      z-index: 1;
+      animation: fadeInUp 0.8s ease 0.8s both;
+    }
+    .stat-item { text-align: center; }
+    .stat-number {
+      font-size: clamp(2rem, 3.5vw, 3rem);
+      font-weight: 800;
+      color: #f5a623;
+      font-style: italic;
+      line-height: 1.2;
+    }
+    .stat-label {
+      color: rgba(255,255,255,0.7);
+      font-size: 0.85rem;
+      font-weight: 400;
+      margin-top: 4px;
+    }
+
+    /* ===== SECTIONS COMMON ===== */
+    .section { padding: 80px 24px; }
+    .section-title {
+      font-size: clamp(2rem, 3.5vw, 2.8rem);
+      font-weight: 900;
+      color: var(--dark-blue);
+      text-align: center;
+      margin-bottom: 16px;
+    }
+    .section-desc {
+      text-align: center;
+      color: #555;
+      max-width: 700px;
+      margin: 0 auto 48px;
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+    .container { max-width: var(--max-width); margin: 0 auto; }
+
+    /* ===== WHAT WE DO ===== */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+    .service-card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 36px;
+      box-shadow: var(--card-shadow);
+      transition: box-shadow 0.3s, transform 0.3s;
+      border: 1px solid #eee;
+    }
+    .service-card:hover { box-shadow: var(--card-shadow-hover); transform: translateY(-4px); }
+    .service-icon {
+      width: 56px;
+      height: 56px;
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      font-size: 1.5rem;
+      color: #fff;
+    }
+    .service-icon.icon-1 { background: var(--gradient-icon-1); }
+    .service-icon.icon-2 { background: var(--gradient-icon-2); }
+    .service-icon.icon-3 { background: var(--gradient-icon-3); }
+    .service-icon.icon-4 { background: var(--gradient-icon-4); }
+    .service-card h3 {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--maroon);
+      margin-bottom: 12px;
+    }
+    .service-card p { color: #555; font-size: 0.95rem; margin-bottom: 16px; line-height: 1.6; }
+    .service-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+    .service-tag {
+      background: #f0f0f0;
+      color: #555;
+      padding: 6px 14px;
+      border-radius: 100px;
+      font-size: 0.8rem;
+      font-weight: 500;
+    }
+
+    /* ===== WHY US ===== */
+    .why-section { background: var(--light-bg); }
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .why-item {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      background: #fff;
+      border-radius: 14px;
+      padding: 20px 24px;
+      box-shadow: 0 1px 8px rgba(0,0,0,0.04);
+    }
+    .why-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      color: #fff;
+      flex-shrink: 0;
+    }
+    .why-item-text { font-weight: 600; font-size: 0.95rem; color: var(--dark-blue); }
+
+    /* ===== APPROACH ===== */
+    .approach-section { background: var(--light-bg); }
+    .approach-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+    }
+    .approach-card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 32px 24px;
+      text-align: center;
+      box-shadow: var(--card-shadow);
+      position: relative;
+      border-bottom: 4px solid transparent;
+      transition: transform 0.3s;
+    }
+    .approach-card:nth-child(1) { border-image: linear-gradient(90deg, #1a237e, #4a148c) 1; }
+    .approach-card:nth-child(2) { border-image: linear-gradient(90deg, #4a148c, #880e4f) 1; }
+    .approach-card:nth-child(3) { border-image: linear-gradient(90deg, #880e4f, #b71c1c) 1; }
+    .approach-card:nth-child(4) { border-image: linear-gradient(90deg, #4a148c, #1a237e) 1; }
+    .approach-card:hover { transform: translateY(-4px); }
+    .approach-number {
+      position: absolute;
+      top: -14px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: #f5a623;
+      color: #fff;
+      font-size: 0.85rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .approach-icon {
+      width: 56px;
+      height: 56px;
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 12px auto 16px;
+      font-size: 1.4rem;
+      color: #fff;
+    }
+    .approach-card h3 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--dark-blue);
+      margin-bottom: 8px;
+      font-style: italic;
+    }
+    .approach-card p { color: #666; font-size: 0.9rem; line-height: 1.5; }
+
+    /* ===== TRAINERS ===== */
+    .trainers-section { background: var(--light-bg); }
+    .trainers-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+    }
+    .trainer-card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 36px 24px;
+      text-align: center;
+      box-shadow: var(--card-shadow);
+      transition: box-shadow 0.3s, transform 0.3s;
+    }
+    .trainer-card:hover { box-shadow: var(--card-shadow-hover); transform: translateY(-4px); }
+    .trainer-icon {
+      width: 56px;
+      height: 56px;
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 16px;
+      font-size: 1.3rem;
+      color: #fff;
+    }
+    .trainer-card h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--dark-blue);
+      margin-bottom: 8px;
+    }
+    .trainer-card p { color: #666; font-size: 0.9rem; line-height: 1.5; }
+
+    /* ===== TESTIMONIALS ===== */
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+    .testimonial-card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 36px;
+      box-shadow: var(--card-shadow);
+      position: relative;
+    }
+    .testimonial-quote {
+      position: absolute;
+      top: 24px;
+      right: 32px;
+      font-size: 3rem;
+      color: rgba(74, 20, 140, 0.15);
+      font-family: Georgia, serif;
+      line-height: 1;
+    }
+    .testimonial-card p {
+      color: #333;
+      font-size: 1rem;
+      line-height: 1.7;
+      margin-bottom: 24px;
+      font-style: italic;
+    }
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .testimonial-avatar {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 1rem;
+      color: #fff;
+    }
+    .testimonial-avatar.avatar-1 { background: var(--gradient-icon-1); }
+    .testimonial-avatar.avatar-2 { background: var(--gradient-icon-2); }
+    .testimonial-name { font-weight: 600; font-size: 0.95rem; color: var(--dark-blue); }
+    .testimonial-role { font-size: 0.8rem; color: #888; }
+
+    /* ===== CONTACT ===== */
+    .contact-section {
+      background: var(--gradient-hero);
+      position: relative;
+    }
+    .contact-section::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 20% 50%, rgba(74, 20, 140, 0.4) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .contact-section .section-title { color: #fff; }
+    .contact-section .section-desc { color: rgba(255,255,255,0.8); }
+    .contact-wrapper {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 48px;
+      align-items: start;
+      position: relative;
+      z-index: 1;
+    }
+    .contact-form-box {
+      background: rgba(255,255,255,0.1);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 20px;
+      padding: 36px;
+    }
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+    .form-input {
+      width: 100%;
+      padding: 14px 18px;
+      border-radius: 10px;
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.15);
+      color: #fff;
+      font-size: 0.95rem;
+      transition: border-color 0.3s, background 0.3s;
+    }
+    .form-input::placeholder { color: rgba(255,255,255,0.5); }
+    .form-input:focus {
+      border-color: #f5a623;
+      background: rgba(255,255,255,0.18);
+    }
+    .form-textarea {
+      width: 100%;
+      padding: 14px 18px;
+      border-radius: 10px;
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.15);
+      color: #fff;
+      font-size: 0.95rem;
+      resize: vertical;
+      min-height: 120px;
+      margin-bottom: 16px;
+      transition: border-color 0.3s, background 0.3s;
+    }
+    .form-textarea::placeholder { color: rgba(255,255,255,0.5); }
+    .form-textarea:focus {
+      border-color: #f5a623;
+      background: rgba(255,255,255,0.18);
+    }
+    .btn-submit {
+      width: 100%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: #f5a623;
+      color: #1a1a2e;
+      font-weight: 700;
+      padding: 16px;
+      border-radius: 12px;
+      font-size: 1.05rem;
+      cursor: pointer;
+      border: none;
+      transition: background 0.3s, transform 0.2s;
+    }
+    .btn-submit:hover { background: #e69816; transform: translateY(-2px); }
+    .contact-info { display: flex; flex-direction: column; gap: 28px; }
+    .contact-info-item {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .contact-info-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      background: rgba(255,255,255,0.12);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      flex-shrink: 0;
+    }
+    .contact-info-label { color: rgba(255,255,255,0.6); font-size: 0.8rem; }
+    .contact-info-value { color: #f5a623; font-weight: 600; font-size: 0.95rem; }
+    .contact-info-value.white { color: #fff; }
+    .btn-outline-white {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #fff;
+      color: var(--maroon);
+      font-weight: 600;
+      padding: 14px 28px;
+      border-radius: 50px;
+      font-size: 0.95rem;
+      cursor: pointer;
+      border: none;
+      margin-top: 12px;
+      transition: transform 0.2s, box-shadow 0.3s;
+    }
+    .btn-outline-white:hover { transform: translateY(-2px); box-shadow: 0 4px 20px rgba(0,0,0,0.2); }
+
+    /* ===== FOOTER ===== */
+    .footer {
+      background: var(--footer-bg);
+      padding: 60px 24px 24px;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr;
+      gap: 48px;
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding-bottom: 36px;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    .footer-logo {
+      font-size: 1.4rem;
+      font-weight: 700;
+      font-style: italic;
+      margin-bottom: 16px;
+    }
+    .footer-logo .white { color: #fff; }
+    .footer-logo .yellow { color: #f5a623; }
+    .footer-desc { color: rgba(255,255,255,0.6); font-size: 0.9rem; line-height: 1.6; }
+    .footer h4 { color: #fff; font-size: 1rem; font-weight: 600; margin-bottom: 20px; }
+    .footer-links { display: flex; flex-direction: column; gap: 10px; }
+    .footer-links a { color: rgba(255,255,255,0.6); font-size: 0.9rem; transition: color 0.2s; }
+    .footer-links a:hover { color: #f5a623; }
+    .social-icons { display: flex; gap: 12px; margin-bottom: 16px; }
+    .social-icon {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.08);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba(255,255,255,0.7);
+      font-size: 1rem;
+      transition: background 0.3s, color 0.3s;
+      cursor: pointer;
+    }
+    .social-icon:hover { background: #f5a623; color: #1a1a2e; }
+    .footer-email { color: rgba(255,255,255,0.6); font-size: 0.9rem; }
+    .footer-bottom {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding-top: 24px;
+      text-align: center;
+      color: rgba(255,255,255,0.4);
+      font-size: 0.85rem;
+    }
+    .footer-bottom .brand { color: #f5a623; font-weight: 600; }
+
+    /* ===== WHATSAPP BUTTON ===== */
+    .whatsapp-btn {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: #25d366;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+      z-index: 999;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+    .whatsapp-btn:hover { transform: scale(1.1); }
+    .whatsapp-btn svg { width: 28px; height: 28px; fill: #fff; }
+
+    /* ===== TOAST ===== */
+    .toast {
+      position: fixed;
+      bottom: 100px;
+      right: 24px;
+      background: #1a1a2e;
+      color: #fff;
+      padding: 16px 24px;
+      border-radius: 12px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+      z-index: 10000;
+      transform: translateX(120%);
+      transition: transform 0.4s ease;
+      font-size: 0.95rem;
+    }
+    .toast.show { transform: translateX(0); }
+    .toast.success { border-left: 4px solid #25d366; }
+    .toast.error { border-left: 4px solid #e53935; }
+
+    /* ===== ANIMATIONS ===== */
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-24px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-on-scroll {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .animate-on-scroll.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 1024px) {
+      .services-grid, .approach-grid, .trainers-grid { grid-template-columns: repeat(2, 1fr); }
+      .contact-wrapper { grid-template-columns: 1fr; }
+      .stats-bar { grid-template-columns: repeat(2, 1fr); gap: 24px; }
+    }
+    @media (max-width: 768px) {
+      .navbar { padding: 12px 20px; }
+      .nav-links { 
+        display: none;
+        position: fixed;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background: rgba(26, 26, 78, 0.98);
+        flex-direction: column;
+        padding: 24px;
+        gap: 16px;
+      }
+      .nav-links.open { display: flex; }
+      .mobile-toggle { display: block; }
+      .services-grid, .testimonials-grid, .why-grid { grid-template-columns: 1fr; }
+      .approach-grid, .trainers-grid { grid-template-columns: repeat(2, 1fr); }
+      .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+      .form-row { grid-template-columns: 1fr; }
+      .hero { padding: 100px 20px 40px; }
+      .section { padding: 60px 20px; }
+    }
+    @media (max-width: 480px) {
+      .approach-grid, .trainers-grid { grid-template-columns: 1fr; }
+      .stats-bar { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <a href="#" class="nav-logo">skillbridg Learning</a>
+    <div class="nav-links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#approach">Approach</a>
+      <a href="#trainers">Trainers</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">☰</button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-badge">
+      <span class="sparkle">✨</span> Chennai's Premier Corporate Training Partner
+    </div>
+    <h1>Learning <span class="highlight">Redefined</span></h1>
+    <p class="hero-desc">
+      skillbridg Learning Academy partners with corporates, institutions, and startups to build leadership capability, employability skills, and high-performance cultures.
+    </p>
+    <div class="hero-buttons">
+      <a href="#contact" class="btn-primary">Partner With Us →</a>
+      <a href="#services" class="btn-secondary">Explore Services</a>
+    </div>
+    <div class="stats-bar">
+      <div class="stat-item">
+        <div class="stat-number">12+</div>
+        <div class="stat-label">Years Experience</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">500+</div>
+        <div class="stat-label">Corporates Trained</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">50K+</div>
+        <div class="stat-label">Professionals Impacted</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">98%</div>
+        <div class="stat-label">Client Satisfaction</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT WE DO -->
+  <section class="section" id="services">
+    <div class="container">
+      <h2 class="section-title animate-on-scroll">What We Do</h2>
+      <p class="section-desc animate-on-scroll">
+        Comprehensive training solutions tailored to transform your workforce and drive organizational excellence.
+      </p>
+      <div class="services-grid">
+        <div class="service-card animate-on-scroll">
+          <div class="service-icon icon-1">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <h3>Corporate Training</h3>
+          <p>Communication, emotional intelligence, professional effectiveness, and collaboration programs designed for measurable impact.</p>
+          <div class="service-tags">
+            <span class="service-tag">Soft Skills</span>
+            <span class="service-tag">Team Building</span>
+            <span class="service-tag">Workplace Communication</span>
+          </div>
+        </div>
+        <div class="service-card animate-on-scroll">
+          <div class="service-icon icon-2">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="5"/><path d="M3 21v-2a7 7 0 0 1 7-7h4a7 7 0 0 1 7 7v2"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3>Leadership Development</h3>
+          <p>First-time manager programs, leadership journeys, and executive coaching for sustainable growth.</p>
+          <div class="service-tags">
+            <span class="service-tag">Executive Coaching</span>
+            <span class="service-tag">Manager Training</span>
+            <span class="service-tag">Leadership Journeys</span>
+          </div>
+        </div>
+        <div class="service-card animate-on-scroll">
+          <div class="service-icon icon-3">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+          </div>
+          <h3>Sales & Customer Excellence</h3>
+          <p>Sales effectiveness, customer-centricity, and service excellence programs that drive revenue and loyalty.</p>
+          <div class="service-tags">
+            <span class="service-tag">Sales Training</span>
+            <span class="service-tag">Customer Service</span>
+            <span class="service-tag">Revenue Growth</span>
+          </div>
+        </div>
+        <div class="service-card animate-on-scroll">
+          <div class="service-icon icon-4">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          </div>
+          <h3>Academic & Employability</h3>
+          <p>Campus-to-corporate readiness, interview preparation, and employability skill development for students and graduates.</p>
+          <div class="service-tags">
+            <span class="service-tag">Campus Training</span>
+            <span class="service-tag">Interview Prep</span>
+            <span class="service-tag">Career Readiness</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY US -->
+  <section class="section why-section" id="about">
+    <div class="container">
+      <h2 class="section-title animate-on-scroll">Why skillbridg Learning Academy</h2>
+      <p class="section-desc animate-on-scroll">
+        Backed by 12+ years of real-world training and consulting experience, skillbridg Learning Academy delivers practical, customized, and ROI-driven learning solutions. We go beyond training to create lasting behavior change and performance excellence.
+      </p>
+      <div class="why-grid">
+        <div class="why-item animate-on-scroll">
+          <div class="why-icon" style="background: var(--gradient-icon-1);">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="7" r="4"/><path d="M5.5 21v-2a5.5 5.5 0 0 1 11 0v2"/><path d="M11 14l2 3h-4l2-3z"/></svg>
+          </div>
+          <span class="why-item-text">12+ Years of Real-World Experience</span>
+        </div>
+        <div class="why-item animate-on-scroll">
+          <div class="why-icon" style="background: var(--gradient-icon-2);">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><circle cx="8" cy="7" r="3"/><circle cx="16" cy="7" r="3"/><path d="M2 20v-1a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v1"/><path d="M14 15h4a4 4 0 0 1 4 4v1"/></svg>
+          </div>
+          <span class="why-item-text">Industry Expert Trainers</span>
+        </div>
+        <div class="why-item animate-on-scroll">
+          <div class="why-icon" style="background: var(--gradient-icon-3);">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="9"/><circle cx="11" cy="11" r="5"/><circle cx="11" cy="11" r="1"/></svg>
+          </div>
+          <span class="why-item-text">ROI-Driven Learning Solutions</span>
+        </div>
+        <div class="why-item animate-on-scroll">
+          <div class="why-icon" style="background: var(--gradient-icon-4);">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 11l5 5L20 5"/><circle cx="11" cy="11" r="9"/></svg>
+          </div>
+          <span class="why-item-text">Lasting Behavior Change Focus</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- APPROACH -->
+  <section class="section approach-section" id="approach">
+    <div class="container">
+      <h2 class="section-title animate-on-scroll">Our Approach</h2>
+      <p class="section-desc animate-on-scroll">
+        A proven methodology that ensures lasting transformation and measurable results.
+      </p>
+      <div class="approach-grid">
+        <div class="approach-card animate-on-scroll">
+          <div class="approach-number">1</div>
+          <div class="approach-icon" style="background: linear-gradient(135deg, #1565c0, #1a237e);">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+          </div>
+          <h3>Understand</h3>
+          <p>Deep diagnosis of business goals and people challenges.</p>
+        </div>
+        <div class="approach-card animate-on-scroll">
+          <div class="approach-number">2</div>
+          <div class="approach-icon" style="background: linear-gradient(135deg, #7b1fa2, #4a148c);">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+          </div>
+          <h3>Design</h3>
+          <p>Customized learning journeys aligned to culture and objectives.</p>
+        </div>
+        <div class="approach-card animate-on-scroll">
+          <div class="approach-number">3</div>
+          <div class="approach-icon" style="background: linear-gradient(135deg, #ad1457, #880e4f);">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          </div>
+          <h3>Deliver</h3>
+          <p>Engaging, experiential learning with real-world application.</p>
+        </div>
+        <div class="approach-card animate-on-scroll">
+          <div class="approach-number">4</div>
+          <div class="approach-icon" style="background: linear-gradient(135deg, #4a148c, #1a237e);">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 4v6h-6M1 20v-6h6"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
+          </div>
+          <h3>Sustain</h3>
+          <p>Reinforcement, coaching, and follow-through for impact.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRAINERS -->
+  <section class="section trainers-section" id="trainers">
+    <div class="container">
+      <h2 class="section-title animate-on-scroll">Trainer Credibility & Impact</h2>
+      <p class="section-desc animate-on-scroll">
+        Our trainers bring decades of real-world expertise to every program, ensuring practical, impactful learning experiences.
+      </p>
+      <div class="trainers-grid">
+        <div class="trainer-card animate-on-scroll">
+          <div class="trainer-icon" style="background: var(--gradient-icon-1);">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="7" r="4"/><path d="M5.5 21v-2a5.5 5.5 0 0 1 11 0v2"/><path d="M11 14l2 3h-4l2-3z"/></svg>
+          </div>
+          <h3>Certified Excellence</h3>
+          <p>ICF-certified coaches and globally accredited facilitators</p>
+        </div>
+        <div class="trainer-card animate-on-scroll">
+          <div class="trainer-icon" style="background: var(--gradient-icon-2);">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="18" height="18" rx="2"/><path d="M8 7h8M8 11h8M8 15h4"/></svg>
+          </div>
+          <h3>Industry Veterans</h3>
+          <p>Trainers with 15+ years of corporate leadership experience</p>
+        </div>
+        <div class="trainer-card animate-on-scroll">
+          <div class="trainer-icon" style="background: var(--gradient-icon-3);">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><circle cx="8" cy="7" r="3"/><circle cx="16" cy="7" r="3"/><path d="M2 20v-1a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v1"/><path d="M14 15h4a4 4 0 0 1 4 4v1"/></svg>
+          </div>
+          <h3>Pan-India Reach</h3>
+          <p>Trained 50,000+ professionals across 500+ organizations</p>
+        </div>
+        <div class="trainer-card animate-on-scroll">
+          <div class="trainer-icon" style="background: var(--gradient-icon-4);">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11,2 14,8 21,9 16,14 17,21 11,18 5,21 6,14 1,9 8,8"/></svg>
+          </div>
+          <h3>Proven Impact</h3>
+          <p>98% client satisfaction with measurable ROI</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section">
+    <div class="container">
+      <div class="testimonials-grid">
+        <div class="testimonial-card animate-on-scroll">
+          <div class="testimonial-quote">❝</div>
+          <p>"skillbridg's leadership program transformed our middle management into confident decision-makers. The results were visible within weeks."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar avatar-1">H</div>
+            <div>
+              <div class="testimonial-name">HR Director</div>
+              <div class="testimonial-role">Leading IT Services Company</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card animate-on-scroll">
+          <div class="testimonial-quote">❝</div>
+          <p>"The customized soft skills training helped our campus hires transition seamlessly into corporate roles. Exceptional program!"</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar avatar-2">L</div>
+            <div>
+              <div class="testimonial-name">L&D Head</div>
+              <div class="testimonial-role">Fortune 500 Manufacturing Firm</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <h2 class="section-title animate-on-scroll">Let's Create Learning That Matters</h2>
+      <p class="section-desc animate-on-scroll">
+        Build capable leaders, confident professionals, and future-ready organizations.
+      </p>
+      <div class="contact-wrapper">
+        <div class="contact-form-box animate-on-scroll">
+          <form id="contactForm">
+            <div class="form-row">
+              <input type="text" class="form-input" name="name" placeholder="Your Name" required />
+              <input type="email" class="form-input" name="email" placeholder="Email Address" required />
+            </div>
+            <div class="form-row">
+              <input type="text" class="form-input" name="company" placeholder="Company Name" />
+              <input type="tel" class="form-input" name="phone" placeholder="Phone Number" />
+            </div>
+            <textarea class="form-textarea" name="message" placeholder="Tell us about your training needs..." required></textarea>
+            <button type="submit" class="btn-submit" id="submitBtn">
+              Send Message <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+            </button>
+          </form>
+        </div>
+        <div class="contact-info animate-on-scroll">
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <svg width="20" height="20" fill="none" stroke="#f5a623" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <div class="contact-info-label">Email</div>
+              <div class="contact-info-value">info@skillbridglearningacademy.com</div>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <svg width="20" height="20" fill="none" stroke="#fff" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div>
+              <div class="contact-info-label">Phone</div>
+              <div class="contact-info-value white">+91 98765 43210</div>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <svg width="20" height="20" fill="none" stroke="#fff" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <div class="contact-info-label">Location</div>
+              <div class="contact-info-value white">Chennai, India</div>
+            </div>
+          </div>
+          <a href="#contact" class="btn-outline-white">Get in Touch →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">
+          <span class="white">skillbridg </span><span class="yellow">Learning</span>
+        </div>
+        <p class="footer-desc">
+          Chennai's premier corporate training academy. Transforming professionals and organizations since 2014.
+        </p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <div class="footer-links">
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#approach">Approach</a>
+          <a href="#trainers">Trainers</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+      <div>
+        <h4>Connect With Us</h4>
+        <div class="social-icons">
+          <a class="social-icon" href="#" aria-label="LinkedIn">
+            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a class="social-icon" href="#" aria-label="Twitter">
+            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 0 1-2.825.775 4.958 4.958 0 0 0 2.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 0 0-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 0 0-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 0 1-2.228-.616v.06a4.923 4.923 0 0 0 3.946 4.827 4.996 4.996 0 0 1-2.212.085 4.936 4.936 0 0 0 4.604 3.417 9.867 9.867 0 0 1-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 0 0 7.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0 0 24 4.59z"/></svg>
+          </a>
+          <a class="social-icon" href="mailto:info@skillbridglearningacademy.com" aria-label="Email">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+        </div>
+        <div class="footer-email">info@skillbridglearningacademy.com</div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2026 <span class="brand">skillbridg Learning Academy</span> | Chennai, India | All rights reserved.
+    </div>
+  </footer>
+
+  <!-- WHATSAPP FLOATING BUTTON -->
+  <a href="https://wa.me/919876543210" target="_blank" class="whatsapp-btn" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 32 32"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16c0 3.5 1.128 6.744 3.046 9.378L1.052 31.22l6.022-1.932A15.907 15.907 0 0 0 16.004 32C24.826 32 32 24.822 32 16S24.826 0 16.004 0zm9.32 22.608c-.39 1.1-1.932 2.012-3.148 2.278-.832.178-1.918.32-5.574-1.198-4.678-1.94-7.69-6.686-7.924-6.994-.226-.308-1.886-2.512-1.886-4.79s1.194-3.398 1.618-3.864c.39-.428.852-.536 1.136-.536.284 0 .566.002.814.014.262.012.614-.1.96.732.356.852 1.21 2.942 1.316 3.156.108.214.178.464.036.748-.142.286-.214.464-.428.714-.214.25-.45.558-.642.748-.214.214-.436.446-.188.874.25.428 1.108 1.828 2.38 2.96 1.634 1.458 3.012 1.91 3.44 2.124.428.214.678.178.928-.108.25-.286 1.072-1.25 1.358-1.678.286-.428.572-.356.96-.214.39.142 2.478 1.168 2.904 1.382.428.214.714.322.82.5.108.178.108 1.03-.282 2.132z"/></svg>
+  </a>
+
+  <!-- TOAST NOTIFICATION -->
+  <div class="toast" id="toast"></div>
+
+  <script>
+    // ===== NAVBAR SCROLL EFFECT =====
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    // ===== MOBILE MENU =====
+    const mobileToggle = document.getElementById('mobileToggle');
+    const navLinks = document.getElementById('navLinks');
+    mobileToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+      mobileToggle.textContent = navLinks.classList.contains('open') ? '✕' : '☰';
+    });
+    navLinks.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        mobileToggle.textContent = '☰';
+      });
+    });
+
+    // ===== SCROLL ANIMATIONS =====
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => entry.target.classList.add('visible'), i * 80);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
+
+    // ===== TOAST NOTIFICATIONS =====
+    function showToast(message, type = 'success') {
+      const toast = document.getElementById('toast');
+      toast.textContent = message;
+      toast.className = `toast ${type} show`;
+      setTimeout(() => toast.classList.remove('show'), 4000);
+    }
+
+    // ===== CONTACT FORM =====
+    const API_URL = window.location.hostname === 'localhost' 
+      ? 'http://localhost:5000/api' 
+      : '/api';
+
+    document.getElementById('contactForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const btn = document.getElementById('submitBtn');
+      const originalText = btn.innerHTML;
+      btn.innerHTML = 'Sending...';
+      btn.disabled = true;
+
+      const formData = new FormData(e.target);
+      const data = Object.fromEntries(formData);
+
+      try {
+        const res = await fetch(`${API_URL}/contact`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data),
+        });
+        const result = await res.json();
+        if (res.ok) {
+          showToast('Message sent successfully! We\'ll get back to you soon.', 'success');
+          e.target.reset();
+        } else {
+          showToast(result.error || 'Something went wrong. Please try again.', 'error');
+        }
+      } catch (err) {
+        showToast('Network error. Please check your connection and try again.', 'error');
+      } finally {
+        btn.innerHTML = originalText;
+        btn.disabled = false;
+      }
+    });
+
+    // ===== SMOOTH SCROLL FOR ANCHOR LINKS =====
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
