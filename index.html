@@ -768,26 +768,248 @@ footer {
 .sr-delay-3 { transition-delay:.3s; }
 .sr-delay-4 { transition-delay:.4s; }
 
-/* ─── RESPONSIVE ────────────────────────────────── */
-@media(max-width:1024px) {
-  .hero-inner { grid-template-columns:1fr; }
-  .hero-right { display:none; }
-  .services-head { grid-template-columns:1fr; }
-  .approach-layout { grid-template-columns:1fr; }
-  .why-layout { grid-template-columns:1fr; }
-  .contact-layout { grid-template-columns:1fr; }
-  .footer-grid { grid-template-columns:1fr 1fr; }
-  .impact-grid { grid-template-columns:1fr 1fr; }
-  .testi-grid { grid-template-columns:1fr; }
-  .cred-grid { grid-template-columns:1fr 1fr; }
+
+/* ─── HAMBURGER ─────────────────────────────────── */
+
+.hamburger {
+
+  display:none; flex-direction:column; justify-content:center;
+
+  gap:5px; cursor:pointer; padding:6px; background:none; border:none;
+
+  z-index:1100;
+
 }
-@media(max-width:768px) {
-  .container { padding:0 24px; }
+
+.hamburger span {
+
+  display:block; width:22px; height:2px;
+
+  background:#fff; border-radius:2px;
+
+  transition:all .3s;
+
+}
+
+.hamburger.open span:nth-child(1) { transform:translateY(7px) rotate(45deg); }
+
+.hamburger.open span:nth-child(2) { opacity:0; transform:scaleX(0); }
+
+.hamburger.open span:nth-child(3) { transform:translateY(-7px) rotate(-45deg); }
+
+
+
+.mobile-nav {
+
+  display:none; position:fixed; inset:0; z-index:999;
+
+  background:rgba(11,42,91,0.98); backdrop-filter:blur(16px);
+
+  flex-direction:column; align-items:center; justify-content:center;
+
+  gap:4px;
+
+  opacity:0; pointer-events:none;
+
+  transition:opacity .3s;
+
+}
+
+.mobile-nav.open { opacity:1; pointer-events:all; }
+
+.mobile-nav a {
+
+  font-size:24px; font-weight:700; letter-spacing:2px;
+
+  text-transform:uppercase; color:rgba(255,255,255,0.75);
+
+  text-decoration:none; padding:16px 0;
+
+  transition:color .2s;
+
+  border-bottom:1px solid rgba(255,255,255,0.08);
+
+  width:240px; text-align:center;
+
+}
+
+.mobile-nav a:hover { color:#fff; }
+
+.mobile-nav a:last-child { border-bottom:none; }
+
+.mobile-nav-cta {
+
+  margin-top:20px;
+
+  background:linear-gradient(110deg,var(--azure-mid),var(--azure)) !important;
+
+  color:#fff !important; padding:14px 36px !important;
+
+  border-radius:4px !important; font-size:15px !important;
+
+  box-shadow:0 6px 22px rgba(30,120,200,0.4);
+
+  border-bottom:none !important; border-radius:4px !important;
+
+}
+
+
+
+/* ─── RESPONSIVE ────────────────────────────────── */
+
+@media(max-width:1100px) {
+
+  .hero-inner { gap:48px; }
+
+  .footer-grid { grid-template-columns:1.5fr 1fr 1fr 1fr; gap:32px; }
+
+}
+
+
+
+@media(max-width:960px) {
+
+  .container { padding:0 32px; }
+
+  section { padding:80px 0; }
+
   .nav-links, .nav-cta { display:none; }
+
+  .hamburger { display:flex; }
+
+  .mobile-nav { display:flex; }
+
+  .hero-inner { grid-template-columns:1fr; }
+
+  .hero-right { display:none; }
+
+
+  .hero { padding:100px 0 64px; }
+
+  .hero-h1 { font-size:clamp(36px,7vw,52px); }
+
+  .hero-proof { flex-wrap:wrap; gap:16px; }
+
+  .proof-divider { display:none; }
+
+  .proof-item { flex:1; min-width:80px; }
+
+  .services-head { grid-template-columns:1fr; gap:28px; }
+
+  .services-grid { grid-template-columns:1fr 1fr; }
+
+  .impact-grid { grid-template-columns:1fr 1fr; }
+
+
+  .approach-layout { grid-template-columns:1fr; gap:40px; }
+
+  .approach-sticky { position:static; }
+
+  .why-layout { grid-template-columns:1fr; }
+
+  .testi-grid { grid-template-columns:1fr 1fr; }
+
+  .cred-grid { grid-template-columns:1fr 1fr; }
+
+
+  .contact-layout { grid-template-columns:1fr; }
+
+  .contact-form-wrap { padding:32px 28px; }
+
+  .footer-grid { grid-template-columns:1fr 1fr; gap:36px; }
+
+}
+
+
+
+
+@media(max-width:640px) {
+
+  .container { padding:0 20px; }
+
+  section { padding:64px 0; }
+
+  #nav .nav-inner { padding:0 20px; }
+
+  .nav-logo img { height:30px; }
+
+  .hero { padding:88px 0 56px; }
+
+  .hero-inner { padding:0 20px; }
+
+  .hero-h1 { font-size:clamp(30px,9vw,42px); letter-spacing:-0.5px; }
+
+  .hero-sub { font-size:14px; }
+
+  .hero-actions { flex-direction:column; }
+
+  .hero-actions .btn { text-align:center; justify-content:center; width:100%; }
+
+  .proof-num { font-size:22px; }
+
+  .proof-label { font-size:9px; }
+
+  .ticker-label { display:none; }
+
+  .ticker-track { padding-left:20px; }
+
   .services-grid { grid-template-columns:1fr; }
-  .footer-grid { grid-template-columns:1fr; }
+
+
+  .svc { padding:32px 24px; }
+
+  .services-head-right .btn { display:none; }
+
+  .impact-grid { grid-template-columns:1fr 1fr; }
+
+  .icard { padding:28px 16px; }
+
+  .icard-num { font-size:38px; }
+
+  .icard-sub { display:none; }
+
+  .astep { grid-template-columns:44px 1fr; gap:16px; }
+
   .why-badge { display:none; }
+
+
+  .why-card-main { padding:32px 24px; }
+
+  .testi-grid { grid-template-columns:1fr; }
+
+  .cred-grid { grid-template-columns:1fr 1fr; gap:14px; }
+
+  .ccard { padding:24px 16px; }
+
+  .contact-form-wrap { padding:24px 20px; }
+
   .form-row2 { grid-template-columns:1fr; }
+
+
+  .cinfo-val { font-size:12px; }
+
+  .footer-grid { grid-template-columns:1fr; gap:32px; }
+
+  .footer-main { padding:48px 0 32px; }
+
+  .footer-bottom .container { flex-direction:column; gap:8px; text-align:center; }
+
+  h2.display { font-size:clamp(26px,8vw,38px); }
+
+  .lead { font-size:14px; }
+
+}
+
+
+
+@media(max-width:380px) {
+
+  .hero-h1 { font-size:28px; }
+
+  .cred-grid { grid-template-columns:1fr; }
+
+  .impact-grid { grid-template-columns:1fr; }
+
 }
 </style>
 </head>
@@ -812,9 +1034,35 @@ footer {
     </ul>
     <div class="nav-right">
       <a href="#contact" class="nav-cta">Partner With Us</a>
+       <button class="hamburger" id="hamburger" aria-label="Menu">
+
+        <span></span><span></span><span></span>
+
+      </button>
     </div>
   </div>
 </nav>
+
+
+<!-- Mobile Nav Drawer -->
+
+<div class="mobile-nav" id="mobileNav">
+
+  <a href="#hero" onclick="closeMobileNav()">About</a>
+
+  <a href="#services" onclick="closeMobileNav()">Services</a>
+
+  <a href="#approach" onclick="closeMobileNav()">Approach</a>
+
+  <a href="#trainers" onclick="closeMobileNav()">Trainers</a>
+
+  <a href="#contact" onclick="closeMobileNav()">Contact</a>
+
+  <a href="#contact" class="mobile-nav-cta" onclick="closeMobileNav()">Partner With Us</a>
+
+</div>
+
+
 
 <!-- ═══ HERO ══════════════════════════════════════ -->
 <section id="hero">
@@ -1376,6 +1624,35 @@ footer {
 </footer>
 
 <script>
+  // ── Hamburger / mobile nav
+
+const hamburger = document.getElementById('hamburger');
+
+const mobileNav = document.getElementById('mobileNav');
+
+
+
+function closeMobileNav() {
+
+  hamburger.classList.remove('open');
+
+  mobileNav.classList.remove('open');
+
+  document.body.style.overflow = '';
+
+}
+
+
+
+hamburger.addEventListener('click', () => {
+
+  const isOpen = hamburger.classList.toggle('open');
+
+  mobileNav.classList.toggle('open', isOpen);
+
+  document.body.style.overflow = isOpen ? 'hidden' : '';
+
+});
 // ── NAV scroll state
 const nav = document.getElementById('nav');
 window.addEventListener('scroll', () => {
